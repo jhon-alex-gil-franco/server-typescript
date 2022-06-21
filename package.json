@@ -1,0 +1,22 @@
+{
+  "name": "web_site_dev",
+  "version": "1.0.0",
+  "description": "site web for managment support",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html": "copyfiles --up 1 src/public/*.css dist",
+    "build":"tsc && npm run html"
+
+  },
+  "author": "jhon alexnder gil",
+  "license": "ISC",
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.16"
+  }
+}
